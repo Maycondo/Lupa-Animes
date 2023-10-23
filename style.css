@@ -1,0 +1,38 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+:root {
+  --Cor--mode-linght:   rgb(255, 255, 255);
+}
+
+body {
+  background-image: url(image/Fundo-header.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+}
+
+nav {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+}
+
+.Borda-Lupa {
+  margin: 0 4rem;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  border: solid #fbff00 6px;
+}
