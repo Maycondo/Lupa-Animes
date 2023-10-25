@@ -102,3 +102,16 @@ nav {
 .Login-Register a:hover {
   color: var(--Cor--de-texto);
 }
+
+#Texto-1 {
+  margin: 7rem 2rem;
+  color: aliceblue;
+  font-size: 140px;
+  font-weight: 900;
+}
+
+.Categorias {
+  height: 60rem;
+  width: 100%;
+  background-color: var(--Cor--mode-linght);
+}

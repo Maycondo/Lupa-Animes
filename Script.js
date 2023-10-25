@@ -1,7 +1,16 @@
 // Parte da barra de narvegaçao
 
 const CentroLupa = document.querySelector(".CentroLupa");
-document.addEventListener("mousemove", updateCentroLupaPosition);
+const ModedarkLite = document.querySelector("#Button-Mode");
+const LiteMode = document.querySelector(".Mode-Lite")
+
+function MOdedarkELite(e){
+
+  
+}
+
+document.addEventListener("click", MOdedarkELite)
+
 
 // Função para atualizar a posição do círculo com base na posição do mouse
 function updateCentroLupaPosition(e) {
@@ -24,3 +33,4 @@ function updateCentroLupaPosition(e) {
   CentroLupa.style.left = newX + "px";
   CentroLupa.style.top = newY + "px";
 }
+document.addEventListener("mousemove", updateCentroLupaPosition);
