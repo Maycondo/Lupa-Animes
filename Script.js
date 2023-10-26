@@ -2,22 +2,18 @@
 
 const CentroLupa = document.querySelector(".CentroLupa");
 const ModedarkLite = document.querySelector("#Button-Mode");
-const LiteMode = document.querySelector(".Mode-Lite")
+const LiteMode = document.querySelector(".Mode-Lite");
 
-function MOdedarkELite(e){
+function MOdedarkELite(e) {}
 
-  
-}
-
-document.addEventListener("click", MOdedarkELite)
-
+document.addEventListener("click", MOdedarkELite);
 
 // Função para atualizar a posição do círculo com base na posição do mouse
 function updateCentroLupaPosition(e) {
   const mouseX = e.clientX;
   const mouseY = e.clientY;
-  const centerX = window.innerWidth / 18;
-  const centerY = window.innerHeight / 39;
+  const centerX = window.innerWidth / 260;
+  const centerY = window.innerHeight / 90;
 
   // Calcula o ângulo entre o mouse e o centro da janela
   const angle = Math.atan2(mouseY - centerY, mouseX - centerX);

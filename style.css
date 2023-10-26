@@ -4,8 +4,22 @@
 }
 
 :root {
-  --Cor--mode-linght: rgb(255, 255, 255);
+  --Cor-texto-light: rgb(255, 255, 255);
+  --Cor--mode-light: rgb(255, 255, 255);
   --Cor--de-texto: #fbff00;
+  --Cor--centro--input--pesquisa: rgb(255, 255, 255);
+  --Cor--centro--input: rgb(255, 255, 255);
+  --Cor--centro--Lupa: rgb(255, 255, 255);
+  --Cor--perna-Lupa: rgb(255, 255, 255);
+}
+
+.Mode-Dark {
+  --Cor-texto-light: rgb(15, 15, 15);
+  --Cor--mode-light: rgb(15, 15, 15);
+  --Cor--de-texto: #fbff00;
+  --Cor--centro--Lupa: rgb(15, 15, 15);
+  --Cor--perna-Lupa: rgb(15, 15, 15);
+  --Cor--centro--input--pesquisa: rgb(15, 15, 15);
 }
 
 body {
@@ -44,18 +58,17 @@ nav {
   background: transparent;
   border-radius: 50px;
   border: none;
-  transition: 2s;
-  animation: ease-out;
+  transition: 1s;
 }
 
 #Button-Mode:hover {
   background-color: rgba(255, 255, 255, 0.089);
-  transition: 2s;
-  animation: ease-out;
+  transition: 1s;
 }
 
 .Borda-Lupa {
-  margin: 0 4rem;
+  position: absolute;
+  left: 5.5rem;
   height: 40px;
   width: 40px;
   border-radius: 40px;
@@ -67,19 +80,38 @@ nav {
   height: 30px;
   width: 30px;
   border-radius: 30px;
-  background-color: var(--Cor--mode-linght);
+  background-color: var(--Cor--centro--Lupa);
 }
 
 .Perna-Lupa {
   position: absolute;
   top: 2.8rem;
-  left: 4rem;
+  left: 5.5rem;
   height: 23px;
   width: 10px;
-  z-index: -1;
   transform: rotate(43deg);
   border-radius: 13px;
-  background-color: var(--Cor--mode-linght);
+  z-index: -1;
+  background-color: var(--Cor--perna-Lupa);
+}
+
+.Input-Pesquisa {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.Input-Pesquisa input {
+  height: 40px;
+  width: 400px;
+  font-weight: 600;
+  background-color: var(--Cor--centro--input--pesquisa);
+  font-size: 15px;
+  border-radius: 30px;
+  border: none;
 }
 
 .Login-Register {
@@ -96,7 +128,20 @@ nav {
   font-family: "Open Sans", sans-serif;
   font-weight: 900;
   text-decoration: none;
-  color: var(--Cor--mode-linght);
+  color: var(--Cor-texto-light);
+}
+
+.Pesquisa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pesquisa i {
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--Cor--de-texto);
 }
 
 .Login-Register a:hover {
@@ -104,14 +149,14 @@ nav {
 }
 
 #Texto-1 {
-  margin: 7rem 2rem;
+  margin: 7rem 3rem;
   color: aliceblue;
   font-size: 140px;
   font-weight: 900;
 }
 
 .Categorias {
-  height: 60rem;
+  height: 160rem;
   width: 100%;
-  background-color: var(--Cor--mode-linght);
+  background-color: var(--Cor--mode-light);
 }
