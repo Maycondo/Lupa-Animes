@@ -3,7 +3,7 @@
   padding: 0%;
 }
 
-:root {
+.Mode-Linght {
   --Cor-texto-light: rgb(255, 255, 255);
   --Cor--mode-light: rgb(255, 255, 255);
   --Cor--de-texto: #fbff00;
@@ -11,6 +11,9 @@
   --Cor--centro--input: rgb(255, 255, 255);
   --Cor--centro--Lupa: rgb(255, 255, 255);
   --Cor--perna-Lupa: rgb(255, 255, 255);
+  --Cor--texto-categoris: rgb(15, 15, 15);
+  --Cor--de-button: rgb(15, 15, 15);
+  --Cor--de-texto--input: rgb(15, 15, 15);
 }
 
 .Mode-Dark {
@@ -20,6 +23,9 @@
   --Cor--centro--Lupa: rgb(15, 15, 15);
   --Cor--perna-Lupa: rgb(15, 15, 15);
   --Cor--centro--input--pesquisa: rgb(15, 15, 15);
+  --Cor--texto-categoris: rgb(255, 255, 255);
+  --Cor--de-button: rgb(255, 255, 255);
+  --Cor--de-texto--input: rgb(255, 255, 255);
 }
 
 body {
@@ -59,6 +65,7 @@ nav {
   border-radius: 50px;
   border: none;
   transition: 1s;
+  color: var(--Cor--de-button);
 }
 
 #Button-Mode:hover {
@@ -108,6 +115,7 @@ nav {
   height: 40px;
   width: 400px;
   font-weight: 600;
+  color: var(--Cor--de-texto--input);
   background-color: var(--Cor--centro--input--pesquisa);
   font-size: 15px;
   border-radius: 30px;
@@ -158,5 +166,29 @@ nav {
 .Categorias {
   height: 160rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--Cor--mode-light);
+}
+
+.EM-ALTA {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#EM-ALTA {
+  margin: 1.5rem 0;
+  font-weight: 900;
+  color: var(--Cor--texto-categoris);
+}
+
+#ALTA-CARDS {
+  margin: 0 0.5rem;
+  border-radius: 1.5rem;
+  height: 400px;
+  width: 400px;
+  background-color: black;
 }
