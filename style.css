@@ -1,298 +1,83 @@
-* {
+*{
   margin: 0%;
   padding: 0%;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.Mode-Linght {
-  --Cor-texto-light: rgb(255, 255, 255);
-  --Cor--mode-light: rgb(255, 255, 255);
-  --Cor--de-texto: #fbff00;
-  --Cor--centro--input--pesquisa: rgb(255, 255, 255);
-  --Cor--centro--input: rgb(255, 255, 255);
-  --Cor--centro--Lupa: rgb(255, 255, 255);
-  --Cor--perna-Lupa: rgb(255, 255, 255);
-  --Cor--texto-categoris: rgb(15, 15, 15);
-  --Cor--de-button: rgb(15, 15, 15);
-  --Cor--de-texto--input: rgb(15, 15, 15);
-}
+@media only screen and (max-width: 600px ) {
 
-.Mode-Dark {
-  --Cor-texto-light: rgb(15, 15, 15);
-  --Cor--mode-light: rgb(15, 15, 15);
-  --Cor--de-texto: #fbff00;
-  --Cor--centro--Lupa: rgb(15, 15, 15);
-  --Cor--perna-Lupa: rgb(15, 15, 15);
-  --Cor--centro--input--pesquisa: rgb(15, 15, 15);
-  --Cor--texto-categoris: rgb(255, 255, 255);
-  --Cor--de-button: rgb(255, 255, 255);
-  --Cor--de-texto--input: rgb(255, 255, 255);
-}
+  header{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-image: url(image/ImagenMolibe.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
-body {
-  font-family: "Open Sans", sans-serif;
-  background-image: url(image/Fundo-header.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
+  nav{
+    height: 3.2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    
+  }
 
-header {
-  height: 100vh;
-  width: 100%;
-}
+  .Input-Pesquisa {
+    width: 50%;
+    display: flex;
+    align-content: center;
+  }
 
-nav {
-  height: 4rem;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  background-color: transparent;
-}
+  .Input-Pesquisa input {
+    width: 100%;
+    height: 30px;
+    border: solid 2px rgb(255, 238, 0);
+    border-radius: 30px;
+  }
 
-#Button-Mode {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  left: 58rem;
-  font-size: 1.5rem;
-  background: transparent;
-  border-radius: 50px;
-  border: none;
-  transition: 1s;
-  color: var(--Cor--de-button);
-}
+  #Button-Pesquisa{
+    margin: 1px 5px;
+    font-size: 17px;
+    font-weight: 900;
+    border: none;
+    background: none;
+  }
 
-#Button-Mode:hover {
-  background-color: rgba(255, 255, 255, 0.089);
-  transition: 1s;
-}
+  .Login-Register{
+    display: none;
+    gap: 1rem;
+    align-content: center;
+  }
 
-.Borda-Lupa {
-  position: absolute;
-  left: 5.5rem;
-  height: 40px;
-  width: 40px;
-  border-radius: 40px;
-  border: solid #fbff00 6px;
-}
+  #TextoPrincipal{
+    margin: 5rem 2rem;
+    padding: 4rem 0rem;
+    font-size: 120px;
+    color: white;
+    border-right: solid 10px white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
 
-.CentroLupa {
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  border-radius: 30px;
-  background-color: var(--Cor--centro--Lupa);
-}
+  .Categorias{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.Perna-Lupa {
-  position: absolute;
-  top: 2.8rem;
-  left: 5.5rem;
-  height: 23px;
-  width: 10px;
-  transform: rotate(43deg);
-  border-radius: 13px;
-  z-index: -1;
-  background-color: var(--Cor--perna-Lupa);
-}
+  .Categorias h1{
+    margin: 2rem;
+    font-size: 23px;
+    border-bottom: solid 6px rgb(255, 238, 0);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
 
-.Input-Pesquisa {
-  height: 90%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.Input-Pesquisa input {
-  height: 40px;
-  width: 400px;
-  font-weight: 600;
-  color: var(--Cor--de-texto--input);
-  background-color: var(--Cor--centro--input--pesquisa);
-  font-size: 15px;
-  border-radius: 30px;
-  border: none;
-}
-
-.Login-Register {
-  margin: 0 8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
-  list-style: none;
-}
-
-.Login-Register a {
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 900;
-  text-decoration: none;
-  color: var(--Cor-texto-light);
-}
-
-.Pesquisa {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Pesquisa i {
-  cursor: pointer;
-  font-weight: 900;
-  font-size: 20px;
-  color: var(--Cor--de-texto);
-}
-
-.Login-Register a:hover {
-  color: var(--Cor--de-texto);
-}
-
-#Texto-1 {
-  margin: 7rem 3rem;
-  color: aliceblue;
-  font-size: 140px;
-  font-weight: 900;
-}
-
-.Categorias {
-  height: 260rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4rem;
-  background-color: var(--Cor--mode-light);
-}
-
-.Categorias h1 {
-  margin: 1rem;
-  border-bottom: solid 10px var(--Cor--de-texto);
-  font-weight: 900;
-  color: var(--Cor--texto-categoris);
-}
-
-.Em-Alta {
-  margin: 1rem;
-  height: 300px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 0.1rem;
-  align-items: center;
-}
-
-#Alta-Cards {
-  margin: 0.3rem 0.3rem;
-  box-sizing: border-box;
-  border-radius: 20px;
-  height: 400px;
-  width: 400px;
-  background-color: black;
-}
-
-.Shonens-Animes {
-  margin: 1rem;
-  height: 300px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 0.1rem;
-  align-items: center;
-}
-
-#Shonens-Cards {
-  margin: 0.3rem 0.3rem;
-  box-sizing: border-box;
-  border-radius: 20px;
-  height: 400px;
-  width: 400px;
-  background-color: black;
-}
-
-.Informaçaes-shonens {
-  margin: 0 2rem;
-  height: 600px;
-  width: 100%;
-  display: flex;
-}
-
-#Card-img {
-  margin: 2rem 4rem;
-  height: 590px;
-  width: 418px;
-  border-radius: 30px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(Imagens-Animes/Poster-onePiece.jpg);
-}
-
-.Romance-Cards {
-  margin: 1rem;
-  height: 300px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 0.1rem;
-  align-items: center;
-}
-
-#Romance-Cards {
-  margin: 0.3rem 0.3rem;
-  box-sizing: border-box;
-  border-radius: 20px;
-  height: 400px;
-  width: 400px;
-  background-color: black;
-}
-
-.Isekas-Card {
-  margin: 1rem;
-  height: 300px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 0.1rem;
-  align-items: center;
-}
-
-#Isekas-Cards {
-  margin: 0.3rem 0.3rem;
-  box-sizing: border-box;
-  border-radius: 20px;
-  height: 400px;
-  width: 400px;
-  background-color: black;
-}
-
-.Aventura-Cards {
-  margin: 1rem;
-  height: 300px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 0.1rem;
-  align-items: center;
-}
-
-#Aventura-Cards {
-  margin: 0.3rem 0.3rem;
-  box-sizing: border-box;
-  border-radius: 20px;
-  height: 400px;
-  width: 400px;
-  background-color: black;
-}
-
-#Informaçoes-Card {
-  height: 600px;
-  width: 50%;
 }

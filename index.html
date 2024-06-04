@@ -6,56 +6,57 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <title>LupaAnimes</title>
   </head>
   <body class="Mode-Linght">
+
     <header>
       <nav>
-        <div class="Borda-Lupa">
-          <div class="CentroLupa"></div>
+
+        <div class="icone">
+            <span class="Borda-Lupa">
+              <span class="CentroLupa"></span>
+            </span>
+           <span class="Perna-Lupa"></span>
         </div>
-        <div class="Perna-Lupa"></div>
+
         <div class="Input-Pesquisa">
-          <input type="text" placeholder="   Pesquise o seu anime" />
-          <div class="Pesquisa">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
+            <input type="text" placeholder="   Pesquise o seu anime" />
+               <button id="Button-Pesquisa"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <button id="Button-Mode"><i class="fa-solid fa-moon"></i></button>
+
         <ul class="Login-Register">
+          <button id="Button-Mode"><i class="fa-solid fa-moon"></i></button>
           <li><a href="">LOGIN</a></li>
           <li><a href="">REGISTER</a></li>
         </ul>
       </nav>
-      <h1 id="Texto-1">TODOS OS ANIMES</h1>
+      <h1 id="TextoPrincipal">Todos os Animes </h1>
     </header>
+
     <main class="Categorias">
+
       <h1>ANIMES EM ALTA</h1>
-      <div class="Em-Alta">
+      <section class="Em-Alta">
         <div id="Alta-Cards"></div>
         <div id="Alta-Cards"></div>
         <div id="Alta-Cards"></div>
         <div id="Alta-Cards"></div>
-      </div>
+      </section>
+
       <h1>ANIMES SHONENS</h1>
-      <div class="Shonens-Animes">
+      <section class="Shonens-Animes">
         <div id="Shonens-Cards"></div>
         <div id="Shonens-Cards"></div>
         <div id="Shonens-Cards"></div>
         <div id="Shonens-Cards"></div>
-      </div>
-      <div class="Informaçaes-shonens">
+      </section>
+
+      <article class="Informaçaes-shonens">
         <div id="Card-img"></div>
         <div id="Informaçoes-Card">
           <img id="Img-" src="" alt="" />
@@ -70,29 +71,33 @@
             imensuráveis... Assim começou a Grande Era dos Piratas!
           </p>
         </div>
-      </div>
+      </article>
+
       <h1>ANIMES DE ROMANCE</h1>
-      <div class="Romance-Cards">
+      <section class="Romance-Cards">
         <div id="Romance-Cards"></div>
         <div id="Romance-Cards"></div>
         <div id="Romance-Cards"></div>
         <div id="Romance-Cards"></div>
-      </div>
+      </section>
+
       <h1>ANIMES ISEKAS</h1>
-      <div class="Isekas-Card">
+      <section class="Isekas-Card">
         <div id="Isekas-Cards"></div>
         <div id="Isekas-Cards"></div>
         <div id="Isekas-Cards"></div>
         <div id="Isekas-Cards"></div>
-      </div>
+      </section>
+
       <h1>AÇAO & AVENTURA</h1>
-      <div class="Aventura-Cards">
+      <section class="Aventura-Cards">
         <div id="Aventura-Cards"></div>
         <div id="Aventura-Cards"></div>
         <div id="Aventura-Cards"></div>
         <div id="Aventura-Cards"></div>
-      </div>
-      <div class="Informaçaes-shonens">
+      </section>
+
+      <article class="Informaçaes-animes">
         <div id="Informaçoes-Card">
           <img id="Img-" src="" alt="" />
           <p>
@@ -106,9 +111,11 @@
             imensuráveis... Assim começou a Grande Era dos Piratas!
           </p>
         </div>
-        <div id="Card-img"></div>
-      </div>
+        <figure id="Card-img"></figure>
+      </article>
+      
     </main>
+
     <footer></footer>
   </body>
   <script src="Script.js"></script>

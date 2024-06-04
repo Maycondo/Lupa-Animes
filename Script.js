@@ -31,6 +31,7 @@ const BarraNave = () => {
   const body = document.body;
 
   function ModeDark() {
+    
     let IcoModeLight = '<i class="fa-solid fa-sun"></i>';
     let IconeModeDark = '<i class="fa-solid fa-moon"></i>';
 
@@ -47,3 +48,9 @@ const BarraNave = () => {
 };
 
 BarraNave();
+
+
+const animeAlta = () => {
+
+  const AnimesAlta = document.querySelector()
+}
