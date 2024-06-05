@@ -53,4 +53,6 @@ BarraNave();
 const animeAlta = () => {
 
   const AnimesAlta = document.querySelector()
+
+  fetch("")
 }

@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     background-image: url(image/ImagenMolibe.png);
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -35,8 +36,10 @@
   .Input-Pesquisa input {
     width: 100%;
     height: 30px;
-    border: solid 2px rgb(255, 238, 0);
+    font-weight: 600;
+    border: solid 4px rgb(255, 238, 0);
     border-radius: 30px;
+    background-color: rgb(255, 255, 255);
   }
 
   #Button-Pesquisa{
@@ -54,11 +57,17 @@
   }
 
   #TextoPrincipal{
-    margin: 5rem 2rem;
-    padding: 4rem 0rem;
-    font-size: 120px;
+    margin: 8rem 0rem;
+    padding: 2rem 0rem;
+    padding-left: 3rem;
+    font-size: 100px;
     color: white;
     border-right: solid 10px white;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
     font-family: "Ubuntu", sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -67,17 +76,45 @@
   .Categorias{
     width: 100%;
     display: flex;
+    background-color: white;
     flex-direction: column;
     align-items: center;
   }
 
   .Categorias h1{
     margin: 2rem;
-    font-size: 23px;
+    font-size: 20px;
     border-bottom: solid 6px rgb(255, 238, 0);
     font-family: "Ubuntu", sans-serif;
     font-weight: 900;
     font-style: normal;
   }
 
+  .Em-Alta{
+    display: flex;
+    justify-content: center;
+    align-items: center;                                                                                
+    gap: 0.5rem;
+  }
+
+  #Alta-Cards{
+    height: 190px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: black;
+  }
+
+  .Shonens-Animes{
+    display: flex;
+    justify-content: center;
+    align-items: center;                                                                                
+    gap: 0.5rem;
+  }
+
+  #Shonens-Cards{
+    height: 190px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: black;
+  }
 }
